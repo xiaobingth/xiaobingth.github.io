@@ -1,0 +1,17 @@
+git status 查看状态
+git diff 查看更改内容
+git add   -file  添加文件到缓存区
+git commit -m "comment" 提交更改到分支
+git log 查看commit记录
+git reset --hard head^返回上一次提交
+git reset --hard commitID 返回提交ID
+git reflog 记录每次命令
+git checkout --file  用版本库替换工作区的文件，放弃工作区的更改，如果已经add过，暂存区的不会更改，只会放弃工作区的更改
+git reset HEAD file 如果已经add到暂存区，先放弃暂存区的内容，然后再git checkout --file 放弃更改
+
+
+
+git checkout -b dev 创建并切换到分支dev，-b表示创建 = git branch dev  git checkout dev
+git branch 查看分支
+git merge name 合并分支
+git branch -d name 删除分支
